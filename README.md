@@ -1,13 +1,35 @@
 # Customer Churn Modeling
 
-A machine learning notebook project for predicting customer churn from Telco-style customer data.
+A machine learning project that predicts whether a telecom customer is likely to churn.
 
-## Highlights
+## Project Goal
 
-- Binary classification workflow for customer churn
-- Preprocessing with scikit-learn pipelines
-- Model selection and evaluation
-- Included CSV data for reproducible local analysis
+The goal of this project is to build a simple, reproducible classification workflow for customer churn. This is useful because businesses can use churn prediction to identify at-risk customers and plan retention strategies.
+
+## Dataset Source
+
+The project uses the included `telco_v1.csv` dataset, a Telco-style customer churn dataset with customer account information, service usage features, and a churn label.
+
+## Models Used
+
+- Logistic Regression
+- Train/validation split
+- Standard scaling for numeric features
+- Classification metrics: accuracy and ROC-AUC
+
+## Final Results
+
+The final Logistic Regression model reached:
+
+- Validation accuracy: `0.801`
+- Validation ROC-AUC: `0.766`
+
+## What I Learned
+
+- How to prepare tabular customer data for a binary classification task
+- How to split data into training and validation sets
+- How to scale features and train a baseline model
+- How to evaluate churn predictions using both accuracy and ROC-AUC
 
 ## Tech Stack
 
@@ -21,4 +43,3 @@ A machine learning notebook project for predicting customer churn from Telco-sty
 
 - `customer_churn_modeling.ipynb` - main notebook
 - `telco_v1.csv` - dataset
-
